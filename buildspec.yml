@@ -13,7 +13,7 @@ phases:
   build:
     commands:
       - echo Running unit tests with pytest...
-      - pytest --junitxml=report.xml=reports/reports.xml --tb=short  #Generate a JUnit report and show only the first line of the traceback
+      - pytest --junitxml=reports/reports.xml --tb=short  #Generate a JUnit report and show only the first line of the traceback
   post_build:
     commands:
       - echo Build completed successfully
